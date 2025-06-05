@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 20px; /* Отступы вокруг всего содержимого */
+    gap: 20px; /* Отступ между меню и конвертацией */
+  }
+
+  .menu {
+    margin-bottom: 0; /* Убираем лишний отступ, если был */
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .file-converter {
+    width: 100%;
+  }
+}

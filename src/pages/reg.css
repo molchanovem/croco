@@ -1,0 +1,69 @@
+.registration {
+    display: flex;
+    flex-direction: column; /* Элементы будут располагаться по вертикали */
+    justify-content: center; /* Центрирует элементы по вертикали */
+    align-items: center;     /* Центрирует элементы по горизонтали */
+    height: 100vh;           /* Задает высоту на весь экран */
+    padding: 20px;           /* Добавляет отступы для контента */
+  }
+  
+  .registration h2 {
+    margin-bottom: 20px; /* Отступ между заголовком и формой */
+  }
+  
+  .registration form {
+    display: flex;
+    flex-direction: column; /* Формируем элементы формы по вертикали */
+    gap: 15px; /* Расстояние между элементами формы */
+  }
+  
+  .registration input {
+    background-color: rgba(238, 238, 238, 1); /* Убедитесь, что этот стиль не переопределяется */
+    padding: 10px;
+    width: 100%; /* Задаем ширину на 100% */
+    max-width: 300px; /* Ограничиваем ширину элементов */
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Рамка для поля */
+    color: rgba(34, 40, 49, 0.3); /* Цвет текста */
+    transition: background-color 0.3s ease, border 0.3s ease; /* Плавное изменение фона и рамки при фокусе */
+  }
+  
+  .registration button {
+    padding: 10px;
+    width: 110%; /* Ширина кнопки на 100% */
+    max-width: 300px; /* Ограничиваем ширину кнопки */
+    border: none;
+    background-color: rgba(0, 173, 181, 1);
+    color: #222831;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .registration button:hover {
+    background-color: rgb(1, 139, 147);
+  }
+  
+  .registration p {
+    margin-top: 20px;
+    text-align: center; /* Центрируем ссылку внутри блока */
+  }
+  
+  .registration p a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .registration p a:hover {
+    text-decoration: underline;
+  }
+  
+    .logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.logo-image{
+    max-width: 70px;
+    
+}

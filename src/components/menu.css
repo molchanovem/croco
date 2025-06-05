@@ -1,0 +1,80 @@
+/* Меню */
+.menu {
+  width: 20%;
+  padding: 20px;
+  background-color: rgba(57, 62, 70, 1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* Заголовок и иконка в меню */
+.menu h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .menu h3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* запрет переноса */
+    gap: 8px;
+    justify-content: flex-start; /* сдвигаем влево */
+    overflow-x: auto;  /* включаем горизонтальный скролл */
+    padding-bottom: 5px; /* для скролла */
+  }
+
+  .menu h3::-webkit-scrollbar {
+    height: 6px;
+  }
+  .menu h3::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+  .menu h3::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .menu h3 a {
+    flex: 0 0 auto;       /* фиксируем размер по содержимому */
+    min-width: 60px;
+    max-width: 110px;
+    padding: 6px 10px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .logout-button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 5px;
+  }
+
+  .logout-button:hover {
+    background-color: #c62828;
+  }
+
+  .logout-button:active {
+    background-color: #b71c1c;
+  }
+}
